@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+ *main - function for a simple array
+ *make an array and print it
+ *Return: integer
+ */
+int main(void)
+{
+	int i, j;
+	int a[5];
+
+	printf("Enter 5 values to be stored in the array \n");
+
+	for (i = 0; i < 5; i++)
+		scanf("%d", &a[i]);
+	printf("You have entered the following \n");
+	for (j = 0; j < 5; j++)
+		printf("%d \n", a[j]);
+	return (0);
+}
