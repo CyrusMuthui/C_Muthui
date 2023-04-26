@@ -18,17 +18,15 @@ int main(void)
 	int b[rows][columns];
 	int c[rows][columns];
 
-	printf("Enter the values of the first matrix starting with row 1: \n");
 	for (i = 0; i < rows; i++)
 	{
-		printf("Enter the values of the next row:\n");
+		printf("Enter values of row %d of first matrix:\n", (i + 1));
 		for (j = 0; j < columns; j++)
 			scanf("%d", &a[i][j]);
 	}
-	printf("Enter the values of the second matrix starting with row 1: \n");
 	for (i = 0; i < rows; i++)
 	{
-		printf("Enter the values of the next row:\n");
+		printf("Enter values of row %d of second matrix:\n", (i + 1));
 		for (j = 0; j < columns; j++)
 		{
 			scanf("%d", &b[i][j]);
