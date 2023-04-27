@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, j, rows1, rows2, columns1, columns2;
+	int i, j, k, rows1, rows2, columns1, columns2;
 	int sum = 0;
 
 	printf("Enter the number of rows of matrix 1: \n");
@@ -41,10 +41,11 @@ int main(void)
 		{
 			for (j = 0; j < columns2; j++)
 			{
-				sum = sum + a[i][j] * b[j][i];
+				for (k = 0; k < rows2; k++)
+					sum = sum + a[i][k] * b[k][j];
+				c[i][j] = sum;
+				sum = 0;
 			}
-			c[i][j] = sum;
-			sum = 0;
 		}
 		printf("The product of the two matrices is: \n");
 		for (i = 0; i < rows1; i++)
