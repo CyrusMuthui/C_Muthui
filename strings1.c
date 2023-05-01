@@ -10,7 +10,7 @@ int main(void)
 	char name[20];
 
 	printf("Enter name: \n");
-	scanf("%s", name);
-	printf("Name is %s: \n", name);
+	fgets(name, 20, stdin);
+	puts(name);
 	return (0);
 }
