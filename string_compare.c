@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  *main - password checker
@@ -10,6 +9,7 @@ int main(void)
 {
 	char s1[20];
 	char s2[20];
+	int i;
 	int value = 0;
 
 	printf("Enter new password:\n");
@@ -18,7 +18,14 @@ int main(void)
 	printf("Confirm new password:\n");
 	scanf("%s", s2);
 
-	value = strcmp(s1, s2);
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+	{
+		if (s1[i] != s2[i])
+		{
+			value = 1;
+			break;
+		}
+	}
 
 	if (value == 0)
 		printf("Password is set.\n");
