@@ -18,7 +18,7 @@ int main(void)
 	{
 		if (a[i] >= 'a' && a[i] <= 'z')
 		{
-			a[i] = a[i] + 32;
+			a[i] = a[i] - 32;
 		}
 	}
 	printf("The capitalisation is %s: \n", a);
