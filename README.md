@@ -1,5 +1,5 @@
 **C Programming**
 
-By:
+By
 
 ***Cyrus Muthui***
