@@ -9,6 +9,7 @@ void swap(int*, int*);
 int main(void)
 {
 	int x, y;
+
 	printf("Enter two numbers:\n");
 	scanf("%d %d", &x, &y);
 	swap(&x, &y);
@@ -17,13 +18,16 @@ int main(void)
 }
 /**
  *swap - swapping function
+ *@ptr1: first parameter
+ *@ptr2: second parameter
  *Return: void
  */
-void swap(int *x, int *y)
+void swap(int *ptr1, int *ptr2)
 {
 	int c;
-	c = *y;
-	*y = *x;
-	*x = c;
-	printf("x = %d and y = %d in the swap function.\n", *x, *y);
+
+	c = *ptr2;
+	*ptr2 = *ptr1;
+	*ptr1 = c;
+	printf("x = %d and y = %d in the swap function.\n", *ptr1, *ptr2);
 }
