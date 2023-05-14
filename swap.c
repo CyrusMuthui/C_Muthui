@@ -11,7 +11,7 @@ int main(void)
 	int x, y;
 	printf("Enter two numbers:\n");
 	scanf("%d %d", &x, &y);
-	swap(*x, *y);
+	swap(&x, &y);
 	printf("x is %d and y is %d in main function.\n", x, y);
 	return (0);
 }
