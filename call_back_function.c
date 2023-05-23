@@ -2,7 +2,7 @@
 
 void sum(int, int);
 void sub(int, int);
-void display((*)(int, int));
+void display(void (*)(int, int));
 
 /**
  *main - entry point to call
