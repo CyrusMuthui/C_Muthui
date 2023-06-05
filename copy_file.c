@@ -9,6 +9,7 @@ int main(void)
 {
 	FILE *fp1 = NULL;
 	FILE *fp2 = NULL;
+	FILE *fp3 = NULL;
 
 	fp1 = fopen("cyrus.txt", "w");
 	fp2 = fopen("muthui.txt", "r");
@@ -17,11 +18,13 @@ int main(void)
 	while (!feof(fp2))
 		fputc(fgetc(fp2), fp1);
 	fclose(fp2);
-	fp1 = fopen("cyrus.txt", "r");
-	while (!feof(fp1))
+	fclose(fp1);
+	fp3 = fopen("cyrus.txt", "r");
+	while (!feof(fp3))
 	{
-		c = fgetc(fp1);
+		c = fgetc(fp3);
 		printf("%c", c);
 	}
+	fclose(fp3);
 	return (0);
 }
