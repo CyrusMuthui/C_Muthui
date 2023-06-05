@@ -15,7 +15,7 @@ int main(void)
 	char c;
 
 	while (!feof(fp2))
-		fputc(fp1) = fgetc(fp2);
+		fputc(fgetc(fp2), fp1);
 	fclose(fp2);
 	fp1 = fopen("cyrus.txt", "r");
 	while (!feof(fp1))
