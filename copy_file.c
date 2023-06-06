@@ -11,7 +11,7 @@ int main(void)
 	FILE *fp2 = NULL;
 	FILE *fp3 = NULL;
 
-	fp1 = fopen("cyrus.txt", "w");
+	fp1 = fopen("king.txt", "w");
 	fp2 = fopen("muthui.txt", "r");
 	char c;
 
