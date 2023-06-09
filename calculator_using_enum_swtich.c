@@ -14,10 +14,11 @@ int main(void)
 		div
 	};
 	int a, b;
+	enum sign c;
+
 	printf("Enter two numbers:\n");
 	scanf("%d %d", &a, &b);
-	enum sign c;
-	printf("Enter the operation you want:add, mul, sub or div:\n");
+	printf("Enter the operation:\n0 = add\n1 = sub\n2 = mul\n3 = div\n");
 	scanf("%d", (int *)&c);
 	switch (c)
 	{
