@@ -18,7 +18,7 @@ int main(void)
 	scanf("%d %d", &a, &b);
 	enum sign c;
 	printf("Enter the operation you want:add, mul, sub or div:\n");
-	scanf("%d", (int *)c);
+	scanf("%d", (int *)&c);
 	switch (c)
 	{
 	case add:
