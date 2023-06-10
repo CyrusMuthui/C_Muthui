@@ -1,9 +1,11 @@
 #include <stdio.h>
-#define MAX (a, b) if (a > b)\
-		       printf("%d is maximum.\n", a);\
-	else\
-		printf("%d is maximum.\n", b);
-
+#define MAX ((a), (b)) do
+{
+	if ((a) > (b))
+		printf("%d is greater than %d.\n", a, b);
+	else
+		printf("%d is greater than %d.\n", b, a);
+} while (0);
 /**
  *main - entry point
  *Return: integer
